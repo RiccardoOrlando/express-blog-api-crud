@@ -1,8 +1,9 @@
-const appData = require('../DatabasePost')
+const appData = require('../data/DatabasePost')
 
 
 const index = (req, res) => {
-    res.send('Lista di tutti i posts');
+    res.send(`Lista di tutti i posts ${appData}`);
+    console.log(appData)
 }
 
 
@@ -16,7 +17,8 @@ const show = (req, res) => {
     if(!postsSearch){
         return res.sendStatus(404)
     }
-    res.send(`Dettagli del post ${postId}`);
+    res.send(`Dettagli del post ${postsSearch}`);
+    console.log(postsSearch)
 }
 
 
@@ -62,7 +64,12 @@ const destroy = (req, res) => {
     if(!postsSearch){
         return res.sendStatus(404)
     }
-    res.send(`Post ${postId} eliminato`);
+    
+    const postIndex = appData.indexOf(postsSearch);
+    appData.splice(postIndex, 1)
+    console.log(appData)
+
+    res.sendStatus(204)
 }
 
 module.exports = {index, show, post, update, PartialUpdate, destroy}

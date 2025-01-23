@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const appData = require('../DatabasePost')
+const appData = require('../data/DatabasePost')
 const DatabasePostController = require('../controllers/DatabasePostController')
 
 // INDEX - Get all posts
