@@ -5,8 +5,11 @@ const port = 3000
 const postsRouter = require('./routers/posts')
 
 app.use(`/bacheca`, postsRouter)
-
 app.use(express.static('public'))
+//registro il Body-parser
+app.use(express.json());
+
+
 
 
 app.get('/bacheca', (req, res) => {
