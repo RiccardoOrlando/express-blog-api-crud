@@ -1,47 +1,222 @@
 let posts = [
   {
     id: 1,
-    title: "Ciambellone",
-    content:
-      "Sarà che una volta le cose erano più semplici, ma erano anche molto buone. Come le crostate, i biscotti o il ciambellone che la nonna preparava anche all'ultimo sapendo che sareste passati per la merenda: uova, zucchero e farina. Niente di più basic ma che tra le sue mani, mescolando e infornando, diventava una delle prelibatezze per accompagnare il succo di frutta al pomeriggio o il latte e caffè al mattino. Ecco la nostra ricetta del ciambellone a quale atmosfera si ispira, quella di casa e genuinità: con una manciata di scorze di limone o di arancia e una spolverata di zucchero a velo renderete questa soffice delizia profumata e invitante. E per una volta sarà la nonna a farvi i complimenti per aver preparato un morbido ciambellone, così buono che non passa mai di moda!",
-    image: "/imgs/posts/ciambellone.avif",
-    tags: ["Dolci", "Torte", "Ricette vegetariane", "Ricette al forno"],
+    name: "Double Triple",
+    description:
+      "Double 170g beef burger with triple cheddar, double bacon, and Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "Double 170g beef burger, ",
+      "Triple cheddar, ",
+      "Double bacon, ",
+      "Ciccio's sauce, ",
+    ],
   },
   {
     id: 2,
-    title: "Cracker alla barbabietola",
-    content: `I cracker alla barbabietola sono uno snack stuzzicante e originale da preparare in casa utilizzando ingredienti semplici e genuini. Queste sfogliette dal colore brillante non passeranno inosservate nel vostro cestino del pane e arricchiranno la tavola con il loro gusto unico e accattivante. I cracker fatti a mano sono anche un gustoso snack spezza fame, da portare in ufficio o a scuola. Venite a scoprire il nostro mix di semi e cereali per realizzare l'impasto e divertitevi a sperimentare nuove ricette di cracker variando i semi, le farine e le spezie per gusti sempre nuovi, ecco qualche idea:
-              Cracker di farro
-              Cracker di lupini
-              Cracker allo zafferano
-              Cracker ai semi`,
-    image: "cracker_barbabietola.avif",
-    tags: ["Antipasti", "Ricette vegetariane", "Ricette al forno"],
+    name: "Brie",
+    description:
+      "170g beef burger with brie, bacon, caramelized red onion, lamb's lettuce, and Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger ",
+      "Brie,  ",
+      "Bacon, ",
+      "Caramelized red onion, ",
+      "Lamb's lettuce,  ",
+      "Ciccio's sauce,  ",
+    ],
   },
   {
     id: 3,
-    title: "Pasta barbabietola e gorgonzola",
-    content: `La nostra ricetta della pasta barbabietola e gorgonzola vuole ricreare in questo primo piatto un abbinamento appetitoso, già proposto con la torta salata alla barbabietola! Per un pranzo veloce ma gustoso, per chi ama giocare con consistenze e colori naturali in cucina, questa pasta è perfetta! La dolcezza della barbabietola smorza il gusto deciso che caratterizza questo formaggio erborinato molto amato, un'abbinata vincente e molto gustosa. Provate un nuovo condimento per la vostra pasta e sperimentate altre sfiziose varianti:
-            Pasta con barbabietola e pecorino
-            Gnocchi di barbabietola
-            Tagliatelle alla barbabietola con asparagi`,
-    image: "/imgs/posts/pasta_barbabietola.avif",
-    tags: ["Primi piatti", "Ricette vegetariane"],
+    name: "Crispy Goat",
+    description:
+      "Battered and fried chicken burger with lettuce, cheddar, bacon, and Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "Battered and fried chicken burger, ",
+      "Lettuce, ",
+      "Cheddar, ",
+      "Bacon, ",
+      "Ciccio's sauce, ",
+    ],
   },
   {
     id: 4,
-    title: "Pane fritto dolce",
-    content: `Il pane fritto dolce è la versione più antica dell'odierno french toast! Una deliziosa ricetta antispreco che le nonne preparavano ai bambini per merenda, utilizzando gli ingredienti che si avevano sempre a disposizione in casa: pane raffermo, uova, latte e zucchero, che noi abbiamo deciso di aromatizzare con un pizzico di cannella. Facile e veloce da realizzare, il pane fritto dolce vi riporterà con la mente ai sapori dell'infanzia… gustatelo da solo o accompagnatelo con frutta fresca e yogurt per uno spuntino tanto goloso quanto genuino!`,
-    image: "/imgs/posts/pane_fritto_dolce.avif",
-    tags: ["Dolci", "Dolci veloci", "Ricette veloci", "Ricette vegetariane"],
+    name: "Pancetta",
+    description:
+      "170g beef burger with lamb's lettuce, scamorza, pancetta, caramelized onion, fig jam, crispy onion, and Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Lamb's lettuce, ",
+      "Scamorza, ",
+      "Pancetta, ",
+      "Caramelized onion, ",
+      "Fig jam, ",
+      "Crispy onion, ",
+      "Ciccio's sauce ,",
+    ],
   },
   {
     id: 5,
-    title: "Torta paesana",
-    content: `La torta paesana è un dolce di origine lombarda e precisamente della Brianza, la zona compresa tra la provincia a nord di Milano e il lago di Lecco-Como. E' un dolce di origine contadina, dalle infinite varianti, ma realizzata principalmente con pane raffermo bagnato nel latte. E' infatti conosciuta anche come torta di pane o, in dialetto locale, "michelacc" ovvero mica e lac (pane e latte). A seconda dei gusti e delle disponibilità del momento, al pane ammollato ogni famiglia univa ingredienti diversi, chi l'uvetta o chi i pinoli ad esempio. Noi vi presentiamo la nostra versione con l'aggiunta di cacao e amaretti: perfetta da gustare per una merenda dal sapore rustico, la torta paesana è un perfetto dolce di recupero quando si ha del pane avanzato… ed è ancora più buona il giorno dopo!`,
-    image: "/imgs/posts/torta_paesana.avif",
-    tags: ["Dolci", "Dolci al cioccolato", "Torte", "Ricette vegetariane", "Ricette al forno"],
+    name: "Super Crispy",
+    description:
+      "Fried chicken burger with extra crispy breading, lettuce, tomato, and mayonnaise.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "Fried chicken burger with extra crispy breading, ",
+      "Lettuce, ",
+      "Tomato, ",
+      "Mayonnaise, ",
+    ],
+  },
+  {
+    id: 6,
+    name: "Tale",
+    description:
+      "170g beef burger with lamb's lettuce, taleggio, crispy guanciale, caramelized pears, hazelnuts, and Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Lamb's lettuce, ",
+      "Taleggio, ",
+      "Crispy guanciale, ",
+      "Caramelized pears, ",
+      "Hazelnuts, ",
+      "Ciccio's sauce, ",
+    ],
+  },
+  {
+    id: 7,
+    name: "Tuma",
+    description:
+      "170g beef burger with lamb's lettuce, honey caramelized tuma, caramelized onion, crispy onion, and smoked Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Lamb's lettuce, ",
+      "Honey caramelized tuma, m",
+      "Caramelized onion, ",
+      "Crispy onion, ",
+      "Smoked Ciccio's sauce, ",
+    ],
+  },
+  {
+    id: 8,
+    name: "Green",
+    description:
+      "Vegetable burger with lettuce, cheddar, caramelized onion, and Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "Vegetable burger, ",
+      "Lettuce, ",
+      "Cheddar, ",
+      "Caramelized onion, ",
+      "Ciccio's sauce, ",
+    ],
+  },
+  {
+    id: 9,
+    name: "Egg",
+    description:
+      "170g beef burger with lamb's lettuce, cheddar, fried egg, crispy guanciale, and truffle mayonnaise.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Lamb's lettuce, ",
+      "Cheddar, ",
+      "Fried egg, ",
+      "Crispy guanciale, ",
+      "Truffle mayonnaise, ",
+    ],
+  },
+  {
+    id: 10,
+    name: "Porchetta",
+    description:
+      "170g beef burger with scamorza, lettuce, caramelized onion, porchetta, potato rösti, and white Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Scamorza, ",
+      "Lettuce, ",
+      "Caramelized onion, ",
+      "Porchetta, ",
+      "Potato rösti, ",
+      "White Ciccio's sauce, ",
+    ],
+  },
+  {
+    id: 11,
+    name: "Chicken CBT",
+    description:
+      "Grilled chicken thigh with scamorza, lettuce, tomato, and white Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "Grilled chicken thigh, ",
+      "Scamorza, ",
+      "Lettuce, ",
+      "Tomato, ",
+      "White Ciccio's sauce, ",
+    ],
+  },
+  {
+    id: 12,
+    name: "Old School",
+    description:
+      "170g beef burger with double cheddar, caramelized onion, double bacon, white Ciccio's sauce, and BBQ sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Double cheddar, ",
+      "Caramelized onion, ",
+      "Double bacon, ",
+      "White Ciccio's sauce, ",
+      "BBQ sauce, ",
+    ],
+  },
+  {
+    id: 13,
+    name: "Hot BBQ",
+    description:
+      "170g beef burger with cheddar, crispy bacon, caramelized onion, and spicy BBQ sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Cheddar, ",
+      "Crispy bacon, ",
+      "Caramelized onion, ",
+      "Spicy BBQ sauce, ",
+    ],
+  },
+  {
+    id: 14,
+    name: "Truffle",
+    description:
+      "170g beef burger with smoked scamorza, sautéed mushrooms, and truffle mayonnaise.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "170g beef burger, ",
+      "Smoked scamorza, ",
+      "Sautéed mushrooms, ",
+      "Truffle mayonnaise, ",
+    ],
+  },
+  {
+    id: 15,
+    name: "Veggy Deluxe",
+    description:
+      "Vegetable burger with tomato, lettuce, cheddar, and white Ciccio's sauce.",
+    image: "https://glovoapp.com/it/it/palermo/ciccio-s-burger-pmo/",
+    ingredients: [
+      "Vegetable burger, ",
+      "Tomato, ",
+      "Lettuce, ",
+      "Cheddar, ",
+      "White Ciccio's sauce, ",
+    ],
   },
 ];
 
-  module.exports = posts
+module.exports = posts;

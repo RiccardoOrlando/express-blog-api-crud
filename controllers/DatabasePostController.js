@@ -1,8 +1,7 @@
 const appData = require("../data/DatabasePost");
 
 const index = (req, res) => {
-  res.json(`Lista di tutti i posts ${appData}`);
-  console.log(appData);
+  res.json(appData);
 };
 
 const show = (req, res) => {
@@ -30,10 +29,12 @@ const post = (req, res) => {
     image: req.body.image,
     ingredients: req.body.ingredients,
   };
+
+  console.log(req.body)
   // Aggiungiamo la nuova pizza al menu
-  menu.push(newPizza);
+  appData.push(newPizza);
   // controlliamo
-  console.log(menu);
+  console.log(appData);
 
   // Restituiamo lo status corretto e la pizza appena creata
   res.status(201);
